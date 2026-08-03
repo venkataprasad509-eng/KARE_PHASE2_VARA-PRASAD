@@ -1,0 +1,39 @@
+//---------- CSE KARE students------//
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("CSE kARE students");
+    }
+}
+-------------------------------------------------------------------
+  //------null values------//
+  public class Main {
+    public static void main(String[] args) {
+        System.out.println("//n");
+    }
+}
+--------------------------------------------------------------------------------------------------
+  //----- to get the float input from user to write two decimal points------//
+  import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        float num = sc.nextFloat();
+
+        System.out.printf("%.2f", num);
+    }
+}
+-----------------------------------------------------------------------------------------------------
+  //------- get double input from user-----//
+  import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double num = sc.nextDouble();
+
+        System.out.println(num);
+    }
+}
