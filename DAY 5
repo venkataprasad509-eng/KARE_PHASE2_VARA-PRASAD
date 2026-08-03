@@ -1,0 +1,131 @@
+COUNT DIGITS
+------------
+
+import java.util.*;
+class Main {
+    public static void main(String [] args) {
+        Scanner obj = new Scanner(System.in);
+        int n = obj.nextInt();
+        int c = 0;
+        while (n!=0) {
+            n = n/10;
+            c ++;
+        }
+        System.out.println("No of digits:" + c);
+    }
+}
+
+
+REVERSE NUMBER
+---------------
+
+import java.util.*;
+class Main {
+    public static void main(String [] args) {
+        Scanner obj = new Scanner(System.in);
+        int n = obj.nextInt();
+        int d;
+        int ans = 0;
+        while (n!=0) {
+            d = n%10;
+            ans = ans*10+d;
+            n = n/10;
+        }
+        System.out.println("reverse number:" + ans);
+  }
+}
+
+
+Prime number count
+------------------
+
+import java.util.*;
+class Main {
+    public static void main(String [] args) {
+        Scanner obj = new Scanner(System.in);
+        int num = obj.nextInt();
+        int c=0;
+        while (num!=0) {
+            int d = num %10;
+            if(digit == 2 || digit==3 || digit == 5 || digit == 7) {
+                c++;
+            }
+            num=num/10;
+        }
+        System.out.println("prime digit count:" + c);
+    }
+}
+
+
+PALINDROME CHECK
+----------------
+
+import java.util.*;
+class Main {
+    public static void main(String [] args) {
+        Scanner obj = new Scanner(System.in);
+        int num = obj.nextInt();
+        int temp = num,digit,rev = 0;
+        while (num!=0) {
+            
+            digit = num % 10;
+            rev = rev * 10 + digit;
+            num = num /10;
+        }
+        if (temp == rev)
+        System.out.print("Palindrome number");
+        else
+        System.out.print("Not a palindrome");
+    }
+        
+}
+
+REVERSE NUMBER WITH USING RIGHT SIDE FORMATION
+-------------------------------------------------
+
+
+import java.util.*;
+class Main {
+    public static void main(String [] args) {
+        Scanner obj = new Scanner(System.in);
+        int num = obj.nextInt();
+        int digit;
+        while (num!=0) {
+            
+            digit = num % 10;
+            System.out.print(digit);
+            num = num /10;
+        }
+       
+    }
+        
+}
+
+
+COUNT ODD AND EVEN DIGIT
+-------------------------
+
+import java.util.*;
+class Main {
+    public static void main(String [] args) {
+        Scanner obj = new Scanner(System.in);
+        int num = obj.nextInt();
+        int oddCount=0;
+        int evenCount=0;
+        while (num!=0) {
+            
+            int digit = num % 10;
+            
+            if (digit%2==0) {
+                evenCount++;
+            }
+            else{
+                oddCount++;
+            }
+            num = num /10;
+        }
+        
+    }
+        
+}
+
